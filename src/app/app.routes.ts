@@ -7,7 +7,15 @@ export const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'productos',
     pathMatch: 'full',
+  },
+  {
+    path: 'productos',
+    loadComponent: () => import('./pages/productos/productos.page').then( m => m.ProductosPage)
+  },
+  {
+    path: 'edit-product-modal',
+    loadComponent: () => import('./pages/edit-product-modal/edit-product-modal.page').then( m => m.EditProductModalPage)
   },
 ];
