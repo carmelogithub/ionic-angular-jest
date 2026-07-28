@@ -1,0 +1,7 @@
+{
+  "name": "ionic-productos-supabase",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
