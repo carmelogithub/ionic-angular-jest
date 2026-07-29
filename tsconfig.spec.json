@@ -2,9 +2,11 @@
 {
   "extends": "./tsconfig.json",
   "compilerOptions": {
+    "module": "CommonJS", 
     "outDir": "./out-tsc/spec",
+    "noUncheckedSideEffectImports": false,
     "types": [
-      "jasmine"
+      "jest", "zone.js"
     ]
   },
   "files": [
